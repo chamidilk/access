@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://127.0.0.1:3306/oneaccess</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <mapping class="com.ac.ux.persistence.model.AccessDevice"/>
+      <mapping class="com.ac.ux.persistence.model.AccessLog"/>
+      <mapping class="com.ac.ux.persistence.model.AccessPermission"/>
+      <mapping class="com.ac.ux.persistence.model.EmployeeImage"/>
+      <mapping class="com.ac.ux.persistence.model.EmployeeLevel"/>
+      <mapping class="com.ac.ux.persistence.model.Location"/>
+      <mapping class="com.ac.ux.persistence.model.LocationAccessProfile"/>
+      <mapping class="com.ac.ux.persistence.model.LocationAdmin"/>
+      <mapping class="com.ac.ux.persistence.model.LocationDevice"/>
+      <mapping class="com.ac.ux.persistence.model.LocationType"/>
+      <mapping class="com.ac.ux.persistence.model.ProfileLocationMap"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessCompany"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessEmployeeRole"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessPermission"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessPermissionDevice"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessPermissionStatus"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessRole"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessUser"/>
+      <mapping class="com.ac.ux.persistence.model.TAccessUserProfileMap"/>
+      <mapping class="com.ac.ux.persistence.model.TAppParameter"/>
+      <mapping class="com.ac.ux.persistence.model.TBatchPermissionList"/>
+      <mapping class="com.ac.ux.persistence.model.TCardReplacement"/>
+      <mapping class="com.ac.ux.persistence.model.TEmployee"/>
+      <mapping class="com.ac.ux.persistence.model.TEmployeeBatch"/>
+      <mapping class="com.ac.ux.persistence.model.TEmployeeImage"/>
+      <mapping class="com.ac.ux.persistence.model.TFuelAudit"/>
+      <mapping class="com.ac.ux.persistence.model.TFuelDivision"/>
+      <mapping class="com.ac.ux.persistence.model.TFuelStation"/>
+      <mapping class="com.ac.ux.persistence.model.TFunctionalDivision"/>
+      <mapping class="com.ac.ux.persistence.model.TMember"/>
+      <mapping class="com.ac.ux.persistence.model.TMessageAudit"/>
+      <mapping class="com.ac.ux.persistence.model.TNfcDeviceCache"/>
+      <mapping class="com.ac.ux.persistence.model.TNfcOrganizationCache"/>
+      <mapping class="com.ac.ux.persistence.model.TNfcUserCache"/>
+      <mapping class="com.ac.ux.persistence.model.TNfcUserCardCache"/>
+      <mapping class="com.ac.ux.persistence.model.TPermissionBatch"/>
+      <mapping class="com.ac.ux.persistence.model.TPermissionRemoval"/>
+      <mapping class="com.ac.ux.persistence.model.TVisitor"/>
+      <mapping class="com.ac.ux.persistence.model.TVisitorHistory"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
